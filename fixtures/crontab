@@ -1,0 +1,5 @@
+# Demo crontab for the nightshift README. Values here are fake demo text;
+# nightshift keeps variable names only and never prints a value.
+ANTHROPIC_API_KEY=demo-not-a-real-key
+*/15 * * * * claude -p --dangerously-skip-permissions run nightly triage
+0 9 * * * rsync -a /src /dst

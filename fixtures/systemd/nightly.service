@@ -1,0 +1,8 @@
+[Unit]
+Description=Demo nightly agent run
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/gemini -p --max-budget-usd 5 nightly summary
+Environment=GOOGLE_API_KEY=demo-not-a-real-key
+WorkingDirectory=/

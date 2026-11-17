@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.example.nightly</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>codex</string>
+		<string>-p</string>
+		<string>--permission-mode</string>
+		<string>acceptEdits</string>
+		<string>--max-turns</string>
+		<string>5</string>
+		<string>nightly review</string>
+	</array>
+	<key>StartInterval</key>
+	<integer>7200</integer>
+	<key>WorkingDirectory</key>
+	<string>/Users/example/projects/demo</string>
+</dict>
+</plist>
